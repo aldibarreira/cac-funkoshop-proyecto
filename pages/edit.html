@@ -33,8 +33,73 @@
             </ul>
         </nav>
     </header> <!--Fin header-->
-    
+<main>
+      <h2>EDITAR ITEM</h2>
 
+    <label
+    for="categoria">Categoría:</label>
+      <select name="Categoría" id="Categoría">
+          <option 
+        value="Figuras">Figuras</option>
+    </select>
+
+    <label
+    for="Licencia">Categoría:</label>
+      <select name="Licencia" id="Licencia">
+          <option 
+        value="Licencia">Naruto shippuden</option>
+    </select>
+
+    <label for="name">Nombre del producto:</label>
+
+<input type="text" id="name" name="name" minlength="4" maxlength="20"/>
+
+<form action="../../form-result.php" target="_blank">
+
+    <p></p>
+  
+    <p><textarea name="descripcion" cols="40" rows="5"></textarea></p>
+  
+</form>
+   <div>
+<label for="SKU">SKU:</label>
+
+  <input type="text" id="SKU" name="SKU" minlength="4" maxlength="20"/>
+
+<label for="Precio">Precio:</label>
+
+  <input type="text" id="Precio" name="Precio" minlength="4" maxlength="10"/>
+
+<label for="Precio">Stock:</label>
+
+  <input type="number" id="Stock" name="Stock"  maxlength="4"/> 
+
+   </div>
+    <div>
+<label for="Descuento">Descuento:</label>
+
+<input type="number" id="Descuento" name="Descuento"  maxlength="4"/>
+
+<label
+    for="Cuotas">Cuotas:</label>
+      <select name="Cuotas" id="Cuotas">
+          <option 
+        value="6 cuotas sin interes">6 cuotas sin interes </option>
+
+        <option 
+        value="3 cuotas sin interes">3 cuotas sin interes </option>
+    </select>
+
+    </div>
+
+    <form method="post" action="/send/" enctype="multipart/form-data">
+        No se ha seleccionado ningun archivo:
+        <input type="file" accept="image/jpeg" multiple>
+      </form>
+
+      <button> Modificar producto</button>
+    
+</main>
    
 
     <footer>
