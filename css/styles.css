@@ -59,8 +59,8 @@
  /*Este script convierte el em=10px*/
 html {
     font-family:var(--base-font);
-    font-size:62,5%
-    color:var(--dark-solid);
+    font-size:62,5%;
+    color: var(--dark-solid);
 }
 
  /*Este script hace que los textos no tengan underline - tamaño - que hereden familia y color*/
@@ -120,23 +120,54 @@ flex-direction: column;
 
 
  /*Flexbox*/
+
+ .container-general {
+display: flex;
+flex-direction: column;
+width:50;
+}
+    
+.container-formulario {
+display: flex;
+align-self: flex-start;
+margin-top: 3em;
+}
+
+
 .container-productos-fila1 {
 display: flex;
-align-self: flex-end;
+justify-content: space-around;
 }
 
 .item-productos-fila1 {
 display: flex;
 flex-direction: column;
 align-items: center;
-width: 40%;
 }
 
-.container-formulario {
-    display: flex;
-    align-self: flex-start;
-    margin-top: 3em;
-    }
+.container-productos-fila2 {
+display: flex;
+justify-content: space-around;
+}
+    
+.item-productos-fila2 {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+    
+.container-productos-fila3 {
+display: flex;
+justify-content: space-around;
+}
+
+.item-productos-fila3 {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
 
 
  /*Sticker "nuevo" sobre producto*/
