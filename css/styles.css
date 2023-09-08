@@ -47,7 +47,7 @@
      --spacing-8:0.8rem;
     }
 
-
+ /*Selector universal que todos los elementos del sitios mantengan su tamaño al cambiar padding, borde,. etc*/
 *,
 *::before,
 *::after {
@@ -56,13 +56,14 @@
       box-sizing:border-box; 
 }
 
-
+ /*Este script convierte el em=10px*/
 html {
     font-family:var(--base-font);
     font-size:62,5%
     color:var(--dark-solid);
 }
 
+ /*Este script hace que los textos no tengan underline - tamaño - que hereden familia y color*/
 a{
     text-decoration:none;
     font-size:20px;
@@ -70,11 +71,13 @@ a{
     font-family:inherit;
 }
 
+/*Este script hace que las listas no tengan bullets visibles*/
 ul,ol {
     list-style-type:none; 
     color:white;
 }
 
+/*Este script setea las fonts del header y footer*/
 header,
 footer {
     font-family:var(--alternative-font);
@@ -82,12 +85,99 @@ footer {
 }
 
 
+/*Este script setea el tamaño de fuente de los parrafos*/
 p{
     font-size:18px;
 }
     
-
+/*Este script setea el tamaño de los contenedores generales: main / body etc y les sca el margen*/
 .container{
 max-width:1200px;
 margin:0 auto;
 }
+
+.rectangulo-header{
+background-color:var(--dark-solid);
+display: flex;
+justify-content: space-around;
+}
+
+.rectangulo-footer{
+    background-color:var(--dark-solid);
+    display: flex;
+    justify-content:space-around;
+    }
+
+.enlaces-header{
+display: flex;
+flex-direction: row;
+}
+
+.enlaces-footer{
+display: flex;
+flex-direction: column;
+}
+
+
+ /*Flexbox*/
+.container-productos-fila1 {
+display: flex;
+align-self: flex-end;
+}
+
+.item-productos-fila1 {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 40%;
+}
+
+.container-formulario {
+    display: flex;
+    align-self: flex-start;
+    margin-top: 3em;
+    }
+
+
+ /*Sticker "nuevo" sobre producto*/
+.sticker-nuevo {
+margin-top: 3em;
+width: 6em;
+background-color:var(--primary-solid);
+position: relative;
+left: 100px;
+}
+
+.texto-nuevo{
+color:white;
+}
+
+.texto-producto{
+position: relative;
+left: 200px;
+}
+
+.pagination{
+display: flex;
+margin-top: 3em;
+margin-bottom: 3em;
+justify-content: center;
+}
+
+.botoncito {
+    color:var(--light-bg-solid);
+    border: 1px solid var(--dark-300);
+    border-radius: 20%;
+    width: 3em;
+    height: 3em;
+    }
+
+.botoncito a {
+color:#1F1F1F;
+}
+
+ /*Casillero formulario numeros*/
+#number{
+max-width:3em;
+}
+

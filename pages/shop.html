@@ -3,41 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
     <title> Home | Funko Shop </title>
 </head>
 
-<body>
+<body class=container>
     <!--Inicio header-->
     <header>
         <nav>
+          <div class="rectangulo-header">
             <picture>
             <a href="../index.html">
                 <img src="../image/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funko">
             </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="shop.html">Shop</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="login.html">Login</a>
-                </li>
-                <li>
-                    <a href="carrito.html">
-                        <img src="../image/icons/cart-icon.svg" alt="icono del carrito">
-                    </a>
-                </li>
-            </ul>
+            <div class="enlaces-header">
+              <a href="shop.html">SHOP</a>
+              <a href="contacto.html">CONTACTO</a>
+              <a href="login.html">LOGIN</a>
+
+              <a href="carrito.html">
+                <img src="../image/icons/cart-icon.svg" alt="icono del carrito">
+              </a>
+              </div>
+          </div>
         </nav>
     </header> <!--Fin header-->
     
 
     <main>
         <!-- Inicio Formulario -->
-        <aside>
+        <aside class="container-formulario">
           <form
             action="https://formsubmit.co/"
             method="get"
@@ -102,11 +98,13 @@
         </aside>
         <!-- Fin Formulario -->
   
-        <section>
-          <ul>
-            <li>
-              <article>
-                <h3>NUEVO</h3>
+        <section class="container-productos-fila1">
+          
+              <article class="item-productos-fila1">
+                <div class="sticker-nuevo">
+                  <h3 class="texto-nuevo">NUEVO</h3>
+                </div>
+              
                 <a href="">
                   <picture>
                     <img
@@ -114,7 +112,7 @@
                       alt="Figura coleccinable Funko de un Stromtrooper"
                     />
                   </picture>
-                  <div>
+                  <div class="texto-producto">
                     <p>STAR WARS</p>
                     <h4>STORMTROOPER LIGHT SABER</h4>
                     <p>$1799,99</p>
@@ -122,31 +120,35 @@
                   </div>
                 </a>
               </article>
-            </li>
   
-            <li>
-              <article>
-                <h3>NUEVO</h3>
+
+              <article class="item-productos-fila1">
+                <div class="sticker-nuevo">
+                  <h3 class="texto-nuevo">NUEVO</h3>
+                </div>
+              
                 <a href="">
                   <picture>
                     <img
                       src="../image/pokemon/pidgeotto-1.webp"
-                      alt="Figura coleccinable Funko de Pidegeotto"
+                      alt="Figura coleccionable Funko de Pidegeotto"
                     />
                   </picture>
-                  <div>
-                    <p>POKEMON</p>
+                  <div class="texto-producto">
+                    <p>>POKEMON</p>
                     <h4>PIDGEOTTO</h4>
                     <p>$1799,99</p>
                     <p>3 CUOTAS SIN INTERÉS</p>
                   </div>
                 </a>
               </article>
-            </li>
-  
-            <li>
-              <article>
-                <h3>NUEVO</h3>
+
+
+              <article class="item-productos-fila1">
+                <div class="sticker-nuevo">
+                  <h3 class="texto-nuevo">NUEVO</h3>
+                </div>
+              
                 <a href="">
                   <picture>
                     <img
@@ -154,184 +156,55 @@
                       alt="Figura coleccinable Funko de Luna Lovegood"
                     />
                   </picture>
-                  <div>
+                  <div class="texto-producto">
                     <p>HARRY POTTER</p>
                     <h4>LUNA LOVEGOOD LION MASK</h4>
                     <p>$1799,99</p>
-  
                     <p>3 CUOTAS SIN INTERÉS</p>
                   </div>
                 </a>
               </article>
-            </li>
-          </ul>
+
         </section>
   
-        <section>
-          <ul>
-            <li>
-              <article>
-                <h3>NUEVO</h3>
-                <a href="">
-                  <picture>
-                    <img
-                      src="../image/star-wars/trooper-1.webp"
-                      alt="Figura coleccinable Funko de un Stromtrooper"
-                    />
-                  </picture>
-                  <div>
-                    <p>STAR WARS</p>
-                    <h4>STORMTROOPER LIGHT SABER</h4>
-                    <p>$1799,99</p>
-                    <p>3 CUOTAS SIN INTERÉS</p>
-                  </div>
-                </a>
-              </article>
-            </li>
-  
-            <li>
-              <article>
-                <h3>NUEVO</h3>
-                <a href="">
-                  <picture>
-                    <img
-                      src="../image/pokemon/pidgeotto-1.webp"
-                      alt="Figura coleccinable Funko de Pidegeotto"
-                    />
-                  </picture>
-                  <div>
-                    <p>POKEMON</p>
-                    <h4>PIDGEOTTO</h4>
-                    <p>$1799,99</p>
-                    <p>3 CUOTAS SIN INTERÉS</p>
-                  </div>
-                </a>
-              </article>
-            </li>
-  
-            <li>
-              <article>
-                <h3>NUEVO</h3>
-                <a href="">
-                  <picture>
-                    <img
-                      src="../image/harry-potter/luna-1.webp"
-                      alt="Figura coleccinable Funko de Luna Lovegood"
-                    />
-                  </picture>
-                  <div>
-                    <p>HARRY POTTER</p>
-                    <h4>LUNA LOVEGOOD LION MASK</h4>
-                    <p>$1799,99</p>
-  
-                    <p>3 CUOTAS SIN INTERÉS</p>
-                  </div>
-                </a>
-              </article>
-            </li>
-          </ul>
-        </section>
-  
-        <section>
-          <ul>
-            <li>
-              <article>
-                <h3>NUEVO</h3>
-                <a href="">
-                  <picture>
-                    <img
-                      src="../image/star-wars/trooper-1.webp"
-                      alt="Figura coleccinable Funko de un Stromtrooper"
-                    />
-                  </picture>
-                  <div>
-                    <p>STAR WARS</p>
-                    <h4>STORMTROOPER LIGHT SABER</h4>
-                    <p>$1799,99</p>
-                    <p>3 CUOTAS SIN INTERÉS</p>
-                  </div>
-                </a>
-              </article>
-            </li>
-  
-            <li>
-              <article>
-                <h3>NUEVO</h3>
-                <a href="">
-                  <picture>
-                    <img
-                      src="../image/pokemon/pidgeotto-1.webp"
-                      alt="Figura coleccinable Funko de Pidegeotto"
-                    />
-                  </picture>
-                  <div>
-                    <p>POKEMON</p>
-                    <h4>PIDGEOTTO</h4>
-                    <p>$1799,99</p>
-                    <p>3 CUOTAS SIN INTERÉS</p>
-                  </div>
-                </a>
-              </article>
-            </li>
-  
-            <li>
-              <article>
-                <h3>NUEVO</h3>
-                <a href="">
-                  <picture>
-                    <img
-                      src="../image/harry-potter/luna-1.webp"
-                      alt="Figura coleccinable Funko de Luna Lovegood"
-                    />
-                  </picture>
-                  <div>
-                    <p>HARRY POTTER</p>
-                    <h4>LUNA LOVEGOOD LION MASK</h4>
-                    <p>$1799,99</p>
-  
-                    <p>3 CUOTAS SIN INTERÉS</p>
-                  </div>
-                </a>
-              </article>
-            </li>
-          </ul>
-        </section>
   
         <!-- Inicio botones paginación -->
         <nav aria-label="pagination">
-          <ul class="pagination">
-            <li>
-              <a href=""
-                ><span aria-hidden="true"><</span
-                ><span class="visuallyhidden"></span
-              ></a>
-            </li>
-            <li>
-              <a href=""><span class="visuallyhidden"></span>01</a>
-            </li>
-            <li>
-              <a href="" aria-current="page"
-                ><span class="visuallyhidden"></span>02</a
-              >
-            </li>
-            <li>
-              <a href=""><span class="visuallyhidden"></span>...</a>
-            </li>
-            <li>
-              <a href=""><span class="visuallyhidden"></span>09</a>
-            </li>
-            <li>
-              <a href=""><span class="visuallyhidden"></span>10</a>
-            </li>
-            <li>
-              <a href=""
-                ><span class="visuallyhidden"></span
-                ><span aria-hidden="true">></span></a
-              >
-            </li>
-          </ul>
+          <div class="pagination">
+
+          <div class="botoncito">
+             <a href=""><span aria-hidden="true"><</spa ><span class="visuallyhidden"></span></a>
+           </div>
+
+          <div class="botoncito">
+             <a href=""><span class="visuallyhidden"></span>01</a>
+          </div>
+
+          <div class="botoncito">
+           <a href="" aria-current="page"><span class="visuallyhidden"></span>02</a>
+          </div>
+
+          <div class="botoncito">
+           <a href=""><span class="visuallyhidden"></span>...</a>
+          </div>
+
+          <div class="botoncito">
+           <a href=""><span class="visuallyhidden"></span>09</a>
+          </div>
+
+          <div class="botoncito">
+           <a href=""><span class="visuallyhidden"></span>10</a>
+          </div>
+
+          <div class="botoncito">
+           <a href=""><span class="visuallyhidden"></span><span aria-hidden="true">></span></a>
+          </div>
+
+          </div>
         </nav>
         <!-- Fin botones paginación -->
+
+
       </main>
   
    
@@ -339,22 +212,23 @@
     <footer>
         <section>
             <nav>
-                <li>
+              <div class="rectangulo-footer">
+
+                <div class="enlaces-footer">
                     <a href="shop.html">SHOP</a>
-                </li>
-                <li>
                     <a href="registro.html">REGISTRARSE</a>
-                </li>
-                <li>
-                    <a href="login.html">LOGIN</a>
-                </li>
-                <li>
+                    <a class="enlaces" href="login.html">LOGIN</a>
                     <a href="contacto.html">CONTACTO</a>
-                </li>
+                </div>
+
+                <div class="logo-footer">
+                  <picture>
+                    <img src="../image/branding/isotype.svg" alt="Isotipo de la marca funkoshop">
+                  </picture>
+                </div>
+              </div>
             </nav>
-            <picture>
-                <img src="../image/branding/isotype.svg" alt="Isotipo de la marca funkoshop">
-            </picture>
+        
         </section>
         <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
