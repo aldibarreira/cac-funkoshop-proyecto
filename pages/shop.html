@@ -7,110 +7,103 @@
     <title> Home | Funko Shop </title>
 </head>
 
-<body class=container>
+<body>
+
     <!--Inicio header-->
     <header>
-        <nav>
-          <div class="rectangulo-header">
-            <picture>
-            <a href="../index.html">
+
+        <nav class="rectangulo-header">
+              <a href="../index.html">
                 <img src="../image/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funko">
-            </a>
-            </picture>
-            <div class="enlaces-header">
-              <a href="shop.html">SHOP</a>
+              </a>
+              <div>
+              <a href="index.html">HOME</a>
               <a href="contacto.html">CONTACTO</a>
               <a href="login.html">LOGIN</a>
-
               <a href="carrito.html">
                 <img src="../image/icons/cart-icon.svg" alt="icono del carrito">
-              </a>
-              </div>
-          </div>
+             </a>
+            </div>
         </nav>
+
     </header> <!--Fin header-->
     
+<div class="container">
+      <!-- Inicio Formulario -->
+      <aside class="formulario">
+        <form
+          action="https://formsubmit.co/"
+          method="get"
+          enctype="application/x-www-form-urlencoded">
+          <div>
+            <label for="buscar">BUSCAR</label>
+          </div>
 
-    <main>
-      <section class="container-general">
+          <div>
+            <input type="text" name="buscar" id="buscar" required />
+          </div>
 
-        <!-- Inicio Formulario -->
-        <aside class="container-formulario">
-          <form
-            action="https://formsubmit.co/"
-            method="get"
-            enctype="application/x-www-form-urlencoded"
-          >
+          <div>
+            <label for="ordenar">ORDENAR POR</label>
+          </div>
+
+          <div>
+            <select name="“ordenar”" id="“ordenar”">
+              <option value="tamanio">Mayor a menor Tamaño</option>
+              <option value="precio">Mayor a menor Precio</option>
+              <option value="novedad">Más a menos Reciente</option>
+              <option value="coleccion">Colección</option>
+            </select>
+          </div>
+
+            <label for="precio">PRECIO</label>
             <div>
-              <label for="buscar">BUSCAR</label>
+              <label for="minimo">MIN</label>
+              <input id="number" type="number" value="" />
+           
+              <label for="maximo">MAX</label>
+              <input id="number" type="number" value="" />
+     
             </div>
+
+          <div>
+            <label for="filtrar">FILTRAR</label>
+          </div>
+
+          <div>
+            <input type="checkbox" />
+            <label for="nuevos">NUEVOS</label>
+          </div>
+
+          <div>
+            <input type="checkbox" />
+            <label for="ofertas">OFERTAS</label>
+          </div>
+
+          <div>
+            <input type="checkbox" />
+            <label for="edicion">EDICIÓN ESPECIAL</label>
+          </div>
+
+          <div>
+            <input type="checkbox" />
+            <label for="favoritos">FAVORITOS</label>
+          </div>
+        </form>
+      </aside>
+      <!-- Fin Formulario -->
+
+
+    <main class="grilla">   <!-- Inicio BLOQUE DE 9 PRODUCTOS  -->
+   
   
-            <div>
-              <input type="text" name="buscar" id="buscar" required />
-            </div>
-  
-            <div>
-              <label for="ordenar">ORDENAR POR</label>
-            </div>
-  
-            <div>
-              <select name="“ordenar”" id="“ordenar”">
-                <option value="tamanio">Mayor a menor Tamaño</option>
-                <option value="precio">Mayor a menor Precio</option>
-                <option value="novedad">Más a menos Reciente</option>
-                <option value="coleccion">Colección</option>
-              </select>
-            </div>
-  
-            <div>
-              <label for="precio">PRECIO</label>
-              <div>
-                <label for="minimo">MIN</label>
-                <input id="number" type="number" value="" />
+              <article class= "item" "item-1">  <!-- Inicio 1er SUBBLOQUE DE 3 PRODUCTOS -->
               
-                <label for="maximo">MAX</label>
-                <input id="number" type="number" value="" />
-              </div>
-            </div>
-  
-            <div>
-              <label for="filtrar">FILTRAR</label>
-            </div>
-  
-            <div>
-              <input type="checkbox" />
-              <label for="nuevos">NUEVOS</label>
-            </div>
-  
-            <div>
-              <input type="checkbox" />
-              <label for="ofertas">OFERTAS</label>
-            </div>
-  
-            <div>
-              <input type="checkbox" />
-              <label for="edicion">EDICIÓN ESPECIAL</label>
-            </div>
-  
-            <div>
-              <input type="checkbox" />
-              <label for="favoritos">FAVORITOS</label>
-            </div>
-          </form>
-        </aside>
-        <!-- Fin Formulario -->
-  
-        <!-- Inicio BLOQUE DE 9 PRODUCTOS -->
-
-             
-        <section class="container-productos-fila1">  <!-- Inicio 1er SUBBLOQUE DE 3 PRODUCTOS -->
-          
-              <article class="item-productos-fila1">
+                <a href="">
                 <div class="sticker-nuevo">
                   <h3 class="texto-nuevo">NUEVO</h3>
                 </div>
-              
-                <a href="">
+
                   <picture>
                     <img
                       src="../image/star-wars/trooper-1.webp"
@@ -127,12 +120,13 @@
               </article>
   
 
-              <article class="item-productos-fila1">
-                <div class="sticker-nuevo">
-                  <h3 class="texto-nuevo">NUEVO</h3>
-                </div>
-              
+              <article class="item" "item-2">
+
                 <a href="">
+                  <div class="sticker-nuevo">
+                    <h3 class="texto-nuevo">NUEVO</h3>
+                  </div>
+
                   <picture>
                     <img
                       src="../image/pokemon/pidgeotto-1.webp"
@@ -148,13 +142,14 @@
                 </a>
               </article>
 
-
-              <article class="item-productos-fila1">
-                <div class="sticker-nuevo">
-                  <h3 class="texto-nuevo">NUEVO</h3>
-                </div>
+              <article class="item" "item-3">
               
                 <a href="">
+
+                  <div class="sticker-nuevo">
+                    <h3 class="texto-nuevo">NUEVO</h3>
+                  </div>
+
                   <picture>
                     <img
                       src="../image/harry-potter/luna-1.webp"
@@ -168,19 +163,17 @@
                     <p>3 CUOTAS SIN INTERÉS</p>
                   </div>
                 </a>
-              </article>
+              </article>  <!-- Fin 1er SUBBLOQUE DE 3 PRODUCTOS -->
 
-        </section>        <!-- Fin 1er SUBBLOQUE DE 3 PRODUCTOS -->
-
-
-        <section class="container-productos-fila2">  <!-- Inicio 2do SUBBLOQUE DE 3 PRODUCTOS -->
           
-          <article class="item-productos-fila2">
-            <div class="sticker-nuevo">
-              <h3 class="texto-nuevo">NUEVO</h3>
-            </div>
+          <article class="item" "item-4">  <!-- Inicio 2do SUBBLOQUE DE 3 PRODUCTOS -->
           
             <a href="">
+
+              <div class="sticker-nuevo">
+                <h3 class="texto-nuevo">NUEVO</h3>
+              </div>
+            
               <picture>
                 <img
                   src="../image/star-wars/trooper-1.webp"
@@ -197,12 +190,13 @@
           </article>
 
 
-          <article class="item-productos-fila2">
-            <div class="sticker-nuevo">
-              <h3 class="texto-nuevo">NUEVO</h3>
-            </div>
-          
+          <article class="item" "item-5">
+       
             <a href="">
+              <div class="sticker-nuevo">
+                <h3 class="texto-nuevo">NUEVO</h3>
+              </div>
+            
               <picture>
                 <img
                   src="../image/pokemon/pidgeotto-1.webp"
@@ -219,12 +213,14 @@
           </article>
 
 
-          <article class="item-productos-fila2">
-            <div class="sticker-nuevo">
-              <h3 class="texto-nuevo">NUEVO</h3>
-            </div>
-          
+          <article class="item" "item-6">
+        
             <a href="">
+
+              <div class="sticker-nuevo">
+                <h3 class="texto-nuevo">NUEVO</h3>
+              </div>
+            
               <picture>
                 <img
                   src="../image/harry-potter/luna-1.webp"
@@ -238,21 +234,18 @@
                 <p>3 CUOTAS SIN INTERÉS</p>
               </div>
             </a>
-          </article>
-
-    </section>  <!-- Fin 2do SUBBLOQUE DE 3 PRODUCTOS -->
+          </article>  <!-- Fin 2do SUBBLOQUE DE 3 PRODUCTOS -->
 
 
-
-
-        <section class="container-productos-fila3">  <!-- Inicio 3er SUBBLOQUE DE 3 PRODUCTOS -->
           
-          <article class="item-productos-fila3">
-            <div class="sticker-nuevo">
-              <h3 class="texto-nuevo">NUEVO</h3>
-            </div>
-          
+          <article class="item" "item-7">  <!-- Inicio 3er SUBBLOQUE DE 3 PRODUCTOS -->
+           
             <a href="">
+
+              <div class="sticker-nuevo">
+                <h3 class="texto-nuevo">NUEVO</h3>
+              </div>
+            
               <picture>
                 <img
                   src="../image/star-wars/trooper-1.webp"
@@ -269,12 +262,14 @@
           </article>
 
 
-          <article class="item-productos-fila3">
-            <div class="sticker-nuevo">
-              <h3 class="texto-nuevo">NUEVO</h3>
-            </div>
+          <article class="item" "item-8">
           
             <a href="">
+
+              <div class="sticker-nuevo">
+                <h3 class="texto-nuevo">NUEVO</h3>
+              </div>
+            
               <picture>
                 <img
                   src="../image/pokemon/pidgeotto-1.webp"
@@ -291,12 +286,14 @@
           </article>
 
 
-          <article class="item-productos-fila3">
-            <div class="sticker-nuevo">
-              <h3 class="texto-nuevo">NUEVO</h3>
-            </div>
-          
+          <article class="item" "item-9">
+        
             <a href="">
+
+              <div class="sticker-nuevo">
+                <h3 class="texto-nuevo">NUEVO</h3>
+              </div>
+
               <picture>
                 <img
                   src="../image/harry-potter/luna-1.webp"
@@ -310,78 +307,70 @@
                 <p>3 CUOTAS SIN INTERÉS</p>
               </div>
             </a>
-          </article>
+          </article> <!-- Fin 3er SUBBLOQUE DE 3 PRODUCTOS -->
 
-    </section>  <!-- Fin 3er SUBBLOQUE DE 3 PRODUCTOS -->
+        </main>
+      </div>  <!-- Fin BLOQUE DE 9 PRODUCTOS -->
 
-        <!-- Fin BLOQUE DE 9 PRODUCTOS -->
-
-  
-  
-        <!-- Inicio botones paginación -->
-        <nav aria-label="pagination">
-          <div class="pagination">
+        <section class="pagination">        <!-- Inicio SECCION PAGINACION -->
+       
 
           <div class="botoncito">
-             <a href=""><span aria-hidden="true"><</spa ><span class="visuallyhidden"></span></a>
+             <a href=""><</a>
            </div>
 
           <div class="botoncito">
-             <a href=""><span class="visuallyhidden"></span>01</a>
+             <a href="">01</a>
           </div>
 
           <div class="botoncito">
-           <a href="" aria-current="page"><span class="visuallyhidden"></span>02</a>
+           <a href="">02</a>
           </div>
 
           <div class="botoncito">
-           <a href=""><span class="visuallyhidden"></span>...</a>
+           <a href="">...</a>
           </div>
 
           <div class="botoncito">
-           <a href=""><span class="visuallyhidden"></span>09</a>
+           <a href="">09</a>
           </div>
 
           <div class="botoncito">
-           <a href=""><span class="visuallyhidden"></span>10</a>
+           <a href="">10</a>
           </div>
 
           <div class="botoncito">
-           <a href=""><span class="visuallyhidden"></span><span aria-hidden="true">></span></a>
+           <a href="">></span></a>
           </div>
 
-          </div>
-        </nav>
-        <!-- Fin botones paginación -->
-
-      </section>
-      </main>
+        </section>    <!-- Fin SECCION PAGINACION -->
+       
   
-   
-
-    <footer>
-        <section>
-            <nav>
-              <div class="rectangulo-footer">
-
-                <div class="enlaces-footer">
-                    <a href="shop.html">SHOP</a>
+    <footer>   <!-- Inicio Footer -->
+            <nav class="rectangulo-footer">
+                <ul>
+                  <li>
+                    <a href="index.html">HOME</a>
+                  </li>
+                  <li>
                     <a href="registro.html">REGISTRARSE</a>
+                  </li>
+                  <li>
                     <a class="enlaces" href="login.html">LOGIN</a>
+                  </li>
+                  <li>
                     <a href="contacto.html">CONTACTO</a>
-                </div>
-
-                <div class="logo-footer">
-                  <picture>
+                  </li>
+                </ul>
+ 
+              <a href="../index.html">
                     <img src="../image/branding/isotype.svg" alt="Isotipo de la marca funkoshop">
-                  </picture>
-                </div>
-              </div>
+              </a>
             </nav>
-        
-        </section>
         <p>All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer>
+    </footer> 
+     <!-- Fin Footer -->
+
 </body>
 
 

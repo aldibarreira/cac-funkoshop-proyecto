@@ -90,125 +90,221 @@ p{
     font-size:18px;
 }
     
-/*Este script setea el tamaño de los contenedores generales: main / body etc y les sca el margen*/
+/*Este script setea el tamaño de los contenedores generales: main / body etc y les saca el margen
 .container{
-max-width:1200px;
+max-width:1200px; 
 margin:0 auto;
 }
+*/
 
+
+
+/*Flexbox containers*/
 .rectangulo-header{
-background-color:var(--dark-solid);
 display: flex;
-justify-content: space-around;
+height: 12em;
+justify-content:space-around;
+align-content: center;
+flex-wrap: wrap;
+background-color:var(--dark-solid);
+}
+    
+.rectangulo-header img {
+max-width: 100%;
+}
+
+.rectangulo-header div a {
+margin: 0 3em 0 3em;
+    }
+    
+.rectangulo-footer img {
+max-width: 100%;
 }
 
 .rectangulo-footer{
-    background-color:var(--dark-solid);
-    display: flex;
-    justify-content:space-around;
-    }
-
-.enlaces-header{
 display: flex;
-flex-direction: row;
-}
-
-.enlaces-footer{
-display: flex;
-flex-direction: column;
-}
-
-
- /*Flexbox*/
-
- .container-general {
-display: flex;
-flex-direction: column;
-width:50;
+height: 28em;
+justify-content:space-around;
+align-content: center;
+flex-wrap: wrap;
+background-color:var(--dark-solid);
 }
     
-.container-formulario {
-display: flex;
-align-self: flex-start;
+
+    
+    
+/*Grid containers*/
+.container {
+display: grid; 
+grid-template-columns: 1fr;
 margin-top: 3em;
 }
+  
 
-
-.container-productos-fila1 {
-display: flex;
-justify-content: space-around;
-}
-
-.item-productos-fila1 {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-.container-productos-fila2 {
-display: flex;
-justify-content: space-around;
-}
-    
-.item-productos-fila2 {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-    
-.container-productos-fila3 {
-display: flex;
-justify-content: space-around;
-}
-
-.item-productos-fila3 {
-display: flex;
-flex-direction: column;
-align-items: center;
+.grilla {
+display: grid; 
+grid-template-columns: 1fr;
+justify-content:center;
+gap: 2em;
+margin-top: 3em;
+margin-bottom: 3em;
 }
 
 
+.grilla img {
+        max-width: 100%;
+             }
+ 
 
- /*Sticker "nuevo" sobre producto*/
+
+.formulario{
+display: grid;
+grid-template-columns: 1fr;
+max-width: 30%;
+}
+
+        
+
+/*Sticker "nuevo" sobre producto*/
 .sticker-nuevo {
-margin-top: 3em;
-width: 6em;
+width: 22%;
+height: 5%;
 background-color:var(--primary-solid);
 position: relative;
-left: 100px;
+right: -70%;
+text-align: center;
 }
-
+    
 .texto-nuevo{
 color:white;
+font-size: 60%;
 }
+    
+h3 {
+padding: .24em;
+    }
 
-.texto-producto{
-position: relative;
-left: 200px;
-}
-
-.pagination{
+/*Paginacion*/
+.pagination {
 display: flex;
+gap: .5em;
 margin-top: 3em;
 margin-bottom: 3em;
 justify-content: center;
 }
-
+    
 .botoncito {
-    color:var(--light-bg-solid);
-    border: 1px solid var(--dark-300);
-    border-radius: 20%;
-    width: 3em;
-    height: 3em;
-    }
-
+color:var(--light-bg-solid);
+border: 1px solid var(--dark-300);
+border-radius: 20%;
+width: 2em;
+height: 2em;
+text-align: center;
+padding-top: .29em;
+}
+    
 .botoncito a {
 color:#1F1F1F;
+font-size: 90%;
 }
-
- /*Casillero formulario numeros*/
+    
+/*Casillero formulario numeros*/
 #number{
-max-width:3em;
+    color: #1F1F1F;
+    max-width: 24%;
 }
+    
 
+/*QUERIES tablet*/
+
+@media (min-width: 768px){
+    .container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin-top: 3em;
+    justify-items: center;
+    }     
+
+    .grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0%;
+    } 
+
+    .formulario{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    }
+    
+    #number{
+        color: #1F1F1F;
+        max-width: 11%;
+    }
+       
+    .sticker-nuevo{
+    width: 40%;
+    height: 6%;
+    position: relative;
+    right: -50%;
+    text-align: center;
+    }
+       
+    h3 {
+        padding: 0;
+            }
+
+    .texto-nuevo{
+    font-size: 100%;
+    }
+
+
+                         
+}    
+
+/*QUERIES desktop*/
+
+@media (min-width: 1440px){
+    .container {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        margin-top: 3em;
+        justify-items: center;
+        }  
+
+    .grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0%;
+    } 
+
+    .formulario{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    }
+    
+    #number{
+        color: #1F1F1F;
+        max-width: 11%;
+    }
+       
+    .sticker-nuevo{
+    width: 28%;
+    height: 6%;
+    position: relative;
+    right: -70%;
+    text-align: center;
+    }
+    
+    h3 {
+        padding: .3em;
+            }
+
+    .texto-nuevo{
+    font-size: 80%;
+    }
+
+
+                         
+}    
